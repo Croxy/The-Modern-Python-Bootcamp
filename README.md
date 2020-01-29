@@ -129,7 +129,7 @@ print(10//3) # // integer division, does the division, just returns an int. Alwa
     * Using [escape characters (sequences?)](https://docs.python.org/3/reference/lexical_analysis.html)
         * In Python there are also "escape characters" (most languages support these), which are "metacharacters" - they get interpreted by Python to do something special. 
         * A few of these characters that would be good to note before moving forward:
-        > All escape characters start with a '\' (backslash).
+            > All escape characters start with a '\' (backslash).
             * `\n` - Creates a new line in a variable.
             * `\"`, `\'` - Allows for printing double and single quotes inside of other double or single quotes.
 
