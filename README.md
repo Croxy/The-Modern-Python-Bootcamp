@@ -83,17 +83,55 @@ print(10//3) # // integer division, does the division, just returns an int. Alwa
         
 - Learn some of the different data types available in Python
     * When a variable is assigned, it must be a valid data type.
-    * Most common data types used in Python
+    * Most common data types used in Python:
+
     |Data Type|Description|
     |--|--|
-    |bool|True or False values|
+    |bool|True or False values, case sensitive, must be capital T or F to work as a boolean.|
     |int| an integer (1,2,3)|
-    |str|(string) a sequence of Unicode characters, e.g. "Colt" or "Ryan|
+    |str|(string) a sequence of Unicode characters inside quotes, e.g. "Colt", "Ryan", "2"|
     |list|an ordered sequence of values of other data types, e.g. [1,2,3] or ["a","b","c"]|
     |dict|a collection of key:value pairs e.g. {"first_name":"Ryan", "last_name":"Cox"}|
 
+    > Special Value: `None` - value Python uses to represent the idea of nothingness, or a "null" variable. Similar to `True` and `False` this value must be capitalized for Python to treat the variable assigned as "null". 
+
 - Learn why Python is called a dynamically typed language
+    * Python is highly flexible about reassigning variables to different types:
+        ```
+            awesomeness = True
+            print(awesomeness) # True
+
+            awesomeness = "a dog" 
+            print(awesomeness) # a dog
+
+            awesomeness = None
+            print(awesomeness) # None
+
+            awesomeness = 22/7
+            print(awesomeness) # 3.142857...
+        ```
+    * Because Python allows variables to change data types readily it is considered a Dynamically Typed language.
+    * Other languages are statically typed (like C++) and require variables to be stuck with their originally assigned data types.
+
+
 - Learn how to convert data types (int to string, string to int, int to float etc...)
 - Learn the ins and outs of Strings!
+    * Declaring strings
+        * String literals in Python can be declared with either single or double quotes.
+        ```
+            my_string = 'a hat'
+            this_other_string = "a cat"
+        ```
+        * While either is fine, you should stick to the same convention through a file and/or project. Being consistent is good practice.
+
+    > A note on Using quotes inside quotes: You can use single quotes inside double quotes, or double quotes inside of single quotes. You can never use single inside single, or double inside double.
+
+    * Using [escape characters (sequences?)](https://docs.python.org/3/reference/lexical_analysis.html)
+        * In Python there are also "escape characters" (most languages support these), which are "metacharacters" - they get interpreted by Python to do something special. 
+        * A few of these characters that would be good to note before moving forward:
+        > All escape characters start with a '\' (backslash).
+            * `\n` - Creates a new line in a variable.
+            * `\"`, `\'` - Allows for printing double and single quotes inside of other double or single quotes.
+
 - Build a silly program that gest user input.
 
