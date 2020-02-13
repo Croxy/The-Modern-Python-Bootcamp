@@ -36,7 +36,7 @@ else:
 
 ![Conditional Check Flow](ConditionalCheckFlow.png "Conditional Check Flow")
 
-In Python you can do a standalone *if* statement without a followup *else* statement. The below is still valid syntax, and will follow the "Arya Stark" line from the flowchart above.
+In Python you can do a standalone *if* statement without a followup *else* statement. The example code below will follow the "Arya Stark" line from the flowchart above unless name doesn't equal "Arya Stark". If name equals a different value nothing will happen.
 
 ```
 if name == "Arya Stark":
