@@ -84,6 +84,6 @@ Here is a list of comparison operators. In the examples **a = 1** and **b = 1**
  |--|--|--|
  |==|Truth if **a** has the same value as **b**|a == b # True|
  |!=|Truthy if **a** does **NOT** have the same value as **b**|a != b # False|
- |> <br> >|Truthy if **a** is greater than **b** \n Truthy if **a** is less than **b**|a > b # False \n a < b # False|
- |>= \n <=|Truthy if **a** is greater than or equal to **b** \n Truthy if **a** is less than or equal to **b**|a >= b # True \n a <= b # True|
+ |> <br> >|Truthy if **a** is greater than **b** <br> Truthy if **a** is less than **b**|a > b # False <br> a < b # False|
+ |>= <br> <=|Truthy if **a** is greater than or equal to **b** <br> Truthy if **a** is less than or equal to **b**|a >= b # True <br> a <= b # True|
  
