@@ -87,3 +87,12 @@ Here is a list of comparison operators. In the examples **a = 1** and **b = 1**
  |> <br> >|Truthy if **a** is greater than **b** <br> Truthy if **a** is less than **b**|a > b # False <br> a < b # False|
  |>= <br> <=|Truthy if **a** is greater than or equal to **b** <br> Truthy if **a** is less than or equal to **b**|a >= b # True <br> a <= b # True|
  
+ ## Logical Operators
+
+ Logical operators connect multiple comparison operators.
+
+ |Operator|Description|Example|
+ |--|--|--|
+ |and|Truthy if both **a** AND **b** are true <br> (logical conjunction)|**if** a **and** b:<br>    print(c)|
+ |or|Truthy if either **a** OR **b** are true <br> (logical disjunction)|**if** am_tired **or** is_bedtime:<br>    print("go to sleep")|
+ |not|Truthy if the opposite of **a** is true <br> (logical negotiation)|**if not** is_weekend:<br>    print("go to work")|
