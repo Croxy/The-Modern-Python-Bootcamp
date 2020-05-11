@@ -96,3 +96,63 @@ Here is a list of comparison operators. In the examples **a = 1** and **b = 1**
  |and|Truthy if both **a** AND **b** are true <br> (logical conjunction)|**if** a **and** b:<br>    print(c)|
  |or|Truthy if either **a** OR **b** are true <br> (logical disjunction)|**if** am_tired **or** is_bedtime:<br>    print("go to sleep")|
  |not|Truthy if the opposite of **a** is true <br> (logical negotiation)|**if not** is_weekend:<br>    print("go to work")|
+
+(AND example) Check if age is between 2 and 8:
+
+ ```
+age = 6
+
+if age > 2 and age < 8:
+    print("You pay the children's price!")
+ ```
+
+(OR example) Check if the person lives in california based on city entered. 
+
+```
+city = input("where do you live?")
+
+if city == "los angeles" or city == "san francisco":
+    print("You live in California!")
+else:
+    print("You live somewhere else!")
+```
+
+(NOT example) check if person is _not_ a child or senior.
+
+```
+age = 21
+
+# 2-8 $2 ticket
+# >65 $5 ticket
+# all others $10 ticket
+
+if not ((age >= 2 and age <=8) or age >=65):
+    print ("You pay $10")
+
+```
+
+## is vs. "==" 
+
+In python, "==" and "is" are very similar comparators, however they are not the same.
+
+```
+a = 1
+a == 1 # True
+a is 1 # True
+```
+
+```
+a = [1,2,3] # a list of numbers
+b = [1,2,3]
+a == b # True
+a is b # False
+```
+
+```
+c = b
+b is c # True
+```
+
+== checks values
+_is_ checks if the two items are the same thing in _memory_
+
