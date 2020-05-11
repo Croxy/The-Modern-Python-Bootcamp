@@ -7,7 +7,7 @@
 - Use _for_ and _while_ loops to iterate over ranges and strings.
 - Learn how to control exiting a loop.
 
-### _for_ loops
+## _for_ loops
 
 _for_ loops are useful when you have a collection of data. Something you can iterate over or loop through. Using a for loop you can iterate through things like _lists_, _strings_, or a _range_.
 
@@ -75,3 +75,58 @@ The output of this will look like this:
 
  **range(1,0,-1)** will give you integers from 7 to 1
 
+
+
+## _while_ loops
+
+Both _while_ and _for_ loops can be used to iterate over an object. Basically, anything you can do with a _for_ loop, you can do with a _while_ loop. However, not everything you can do with a _while_ loop can be done with a _for_ loop. _while_ loops are more versatile.
+
+Syntax:
+```
+while im_tired:
+    # seek caffeine
+```
+
+_while_ loops continue to execute while a certain condition is truthy, and will end when they become falsy. 
+
+```
+user_response = None
+while user_response != "please":
+    user_response = input("Ah ah ah, you didn't say the magic word: ")
+```
+
+_while_ loops require more careful setup than _for_ loops, since you have to specify the termination conditions manually. 
+
+> Be careful! if the condition doesn't become false at some point, your loop will continue forever!
+
+## Controlled Exit
+
+The keyword **_break_** gives us the ability to exit out of _while_ loops whenever we want:
+
+```
+while True:
+    command = input("Type 'exit' to exit: ")
+    if (command == "exit"):
+        break
+```
+
+It can also be used to end _for_ loops early (even though you'd probably never need to do this):
+
+```
+for x in range(1, 101):
+    print(x)
+    if x == 3:
+        break
+```
+Another example (adding a break)
+
+```
+user_input = int(input("How many times do I have to tell you?"))
+
+if user_input:
+    for num in range(user_input):
+        print(f"time {num+1}: CLEAN YOUR ROOM!")
+        if num >= 3:
+            print("do you even listen anymore?")
+            break
+```
