@@ -264,5 +264,115 @@ name = ["Mr", "Steele"]
 '. '.join(name) # Mr. Steele
 ```
 
+### Slicing
+
+- Built-in tool that enables you to make copies of lists. Mostly used to make partial copies of a given list.
+
+````some_list[start:end:step]```
+
+- start - is where you want the slice to begin, or start cutting from.
+- end - where to stop.
+- step - the step, or the interval. 
+
+#### Looking at the Start parameter:
+
+```
+first_list = [1,2,3,4]
+
+first_list[1:] #[2,3,4]
+
+first_list[3:] # [4]
+```
+
+If you enter a negative number, it will start the slice that many back from the end.
+
+```
+first_list[-1:] # [4]
+first_list[-3:] # [2,3,4]
+```
+
+#### Looking at the End parameter:
+
+This is the index to copy up to. This is exclusive counting, this means it does not include the last index that is provided.
+
+```
+first_list = [1,2,3,4]
+
+first_list[:2] # [1,2,]
+
+first_list[:4] # [1,2,3,4]
+
+first_list[1:3] # [2,3]
+
+```
+
+If you pass a negative number as the end value it will end the slice at that many elements from the end of the list. (i.e. indexing by counting backwards)
+
+```
+first_list[:-1] # [1,2,3]
+
+first_list[1:-1] # [2,3]
+```
+
+#### Looking at the Step parameter:
+
+- "step" in Python is basically the number to count at a time
+- same as step with `range`!
+- for example, a step of '2' counts as every other number (1,3,5)
+
+```
+first_list = [1,2,3,4,5,6]
+
+first_list[1::2] # [2,4,6]
+
+first_list[::2] # [1,3,5]
+```
+
+with negative numbers the order is reversed.
+
+```
+first_list[1::-1] # [2,1]
+
+first_list[:1:-1] # [6,5,4,3]
+
+first_list[2::-1] # [3,2,1]
+```
+
+Tricks with Slices
+
+- Reversing lists/strings
+
+```
+string = "This is fun!"
+
+string[::-1]
+```
+
+- Modifying portions of lists
+
+```
+numbers = [1,2,3,4,5]
+
+numbers[1:3] = ['a','b','c']
+
+print(a) # [1,'a','b','c',4,5]
+```
+
+#### Swapping Values in Lists
+
+```
+names = ["James", "Michelle"]
+
+names[0], names[1] = names[1], names[0]
+
+print(names) # ['Michelle', 'James']
+
+```
+
+When do you need to swap?
+
+- Shuffling 
+- Sorting
+- Algorithms
 
 
